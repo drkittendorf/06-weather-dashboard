@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     // Here we are building the URL we need to query the database
     let queryURL =
-      "http://api.openweathermap.org/data/2.5/forecast?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&appid=" +
       APIKey;
