@@ -3,6 +3,7 @@ $(document).ready(function () {
   // The documentation includes a section called
   // "How to start" that will provide basic setup and usage instructions.
   //  Use `localStorage` to store any persistent data.
+  let citySearch = [];
 
   $("#weather-search").on("click", function (event) {
     // Preventing the button from trying to submit the form
@@ -12,7 +13,11 @@ $(document).ready(function () {
     console.log(weatherCity);
     // Running the function(passing in the city as an argument)
     searchOpenWeather(weatherCity);
+    storeCitySearch(weatherCity);
+    return weatherCity;
   });
+
+  $("#weather-input").keypress;
 
   function searchOpenWeather(city) {
     let APIKey = "166a433c57516f51dfab1f7edaed8413";
@@ -39,7 +44,7 @@ $(document).ready(function () {
         console.log(response);
 
         // Transfer content to HTML
-        $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+        $(".city").html("<h1>" + response.name + "Weather Details</h1>");
         $(".wind").text("Wind Speed: " + response.wind.speed);
         $(".humidity").text("Humidity: " + response.main.humidity);
 
@@ -59,5 +64,21 @@ $(document).ready(function () {
           console.error(error);
         });
       });
+  }
+  // function to store cities searched, in an array and set it to local storage
+  function storeCitySearch(city) {
+    citySearch.push(city);
+    console.log(citySearch);
+    localStorage.setItem("cityArray", JSON.stringify(citySearch));
+    renderHistory();
+  }
+
+  //insert function to replicate history as divs
+  function renderHistory() {
+    $("#newDivHere").empty();
+    let city = localStorage.getItem("cityArray");
+    city = "cityArray" ? JSON.parse : [];
+
+    $("#newDivHere").append("<div>" + city + "</div>");
   }
 }); //closes document.ready
