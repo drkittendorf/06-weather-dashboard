@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--SEARCH FORM & Button-->
+        <div id="together">
+          <form class="form-inline my-2 my-lg-2">
+            <input
+              class="form"
+              type="search"
+              placeholder="Search weather by City"
+            />
+          </form>
+          <!--SEARCH Button-->
+          <button class="btn" type="submit">
+            Search
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid col-lg-12">
+      <!--RECENT SEARCHES-->
+      <div class="row" id="searchHistoryEl">
+        <aside class="column" col-md-4>
+          <h2>Recent Searches</h2>
+          <div class="column" id="newDivHere">
+            <div>Austin remove later</div>
+            <div>Austin remove later</div>
+            <div>Austin remove later</div>
+            <div>Austin remove later</div>
+            <div>Austin remove later</div>
+            <div>Austin remove later</div>
+          </div>
+        </aside>
+        <!--SEARCH RESULTS-->
+        <section class="column" col-md-8>
+          <h2>WEATHER</h2>
+          <p>OUTPUT WEATHER DATA HERE</p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="py-4 bg-dark text-rgba(19, 142, 243, 0.884)">
+      <a>Copyright DM Web Development</a>
+    </footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

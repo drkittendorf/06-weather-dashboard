@@ -1,0 +1,123 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  min-height: 100%;
+}
+
+header {
+  font-family: "Baloo Paaji 2", cursive;
+  color: rgba(19, 142, 243, 0.884);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  top: 5px;
+}
+
+h2 {
+  margin: 15px;
+}
+/*NAV */
+.nav-link {
+  font-family: "Baloo Paaji 2", cursive;
+  color: rgba(19, 142, 243, 0.884);
+  font-size: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(19, 142, 243, 0.884);
+}
+
+#together {
+  display: flex;
+  flex-direction: space-around;
+}
+
+.btn {
+  border-color: black;
+  border-width: 2px;
+  background-color: yellow;
+  border-radius: 30px;
+  color: rgba(19, 142, 243, 0.884);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 18px;
+  margin: 10px;
+  padding: 5px, 5px, 5px, 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input {
+  width: 300px;
+  padding: 15px 20px;
+  border-width: 4px;
+  margin: 10px;
+}
+/* MAIN BODY */
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+aside .column {
+  display: flex;
+  flex-direction: flex-start;
+  min-height: 500px;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 15px;
+  border: 5px;
+  padding: 5px;
+  content: 5px;
+  text-align: center;
+}
+/* insert new divs like this */
+#newDivHere div {
+  border: 1px solid gray;
+  border-bottom: 2px solid black;
+  border-right: 3px solid black;
+  margin: 10px;
+  padding: 5px;
+  content: 5px;
+  min-width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section .column {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 10px;
+  border: 10px;
+  padding: 0px;
+  content: 25px;
+  min-height: 500px;
+  border: 10px;
+}
+section .column h2 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(19, 142, 243, 0.884);
+  font-size: 20px;
+}
