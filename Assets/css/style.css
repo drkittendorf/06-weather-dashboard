@@ -40,12 +40,12 @@ h2 {
   color: rgba(19, 142, 243, 0.884);
 }
 
-#together {
+#weather-search {
   display: flex;
   flex-direction: space-around;
 }
 
-.btn {
+#weather-search {
   border-color: black;
   border-width: 2px;
   background-color: yellow;
@@ -111,6 +111,12 @@ section .column {
 }
 section .column h2 {
   text-align: center;
+}
+.city,
+.wind,
+.humidity,
+.temp {
+  font-family: "Courier New", Courier, monospace;
 }
 
 footer {

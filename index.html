@@ -9,9 +9,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap"
       rel="stylesheet"
@@ -28,16 +26,17 @@
       <h1>Weather Dashboard</h1>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <!--SEARCH FORM & Button-->
-        <div id="together">
+        <div id="weather-places">
           <form class="form-inline my-2 my-lg-2">
             <input
+              id="weather-input"
               class="form"
-              type="search"
+              type="text"
               placeholder="Search weather by City"
             />
           </form>
           <!--SEARCH Button-->
-          <button class="btn" type="submit">
+          <button id="weather-search" class="btn" type="submit">
             Search
           </button>
         </div>
@@ -61,7 +60,11 @@
         <!--SEARCH RESULTS-->
         <section class="column" col-md-8>
           <h2>WEATHER</h2>
-          <p>OUTPUT WEATHER DATA HERE</p>
+          <div class="city"></div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+          <div class="temp"></div>
+          <div class="tempF"></div>
         </section>
       </div>
     </div>
