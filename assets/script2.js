@@ -10,7 +10,7 @@ $(document).ready(function () {
   }
 
   $(document).on("click", ".citybtn", function (event) {
-    searchOpenWeather($(this).val());
+    searchOpenWeatherForecast($(this).val());
   });
 
   $("#weather-search").on("click", function (event) {
@@ -32,12 +32,12 @@ $(document).ready(function () {
     $(".searchHistory").append(newButton);
   }
 
-  function searchOpenWeather(city) {
+  function searchOpenWeatherForecast(city) {
     let APIKey = "166a433c57516f51dfab1f7edaed8413";
 
     // Here we are building the URL we need to query the database
     let queryURL =
-      "https://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&appid=" +
       APIKey;
@@ -67,20 +67,21 @@ $(document).ready(function () {
         console.log(response);
 
         // Transfer content to HTML
-        $(".city").html("<h1>" + response.name + "    Weather Details</h1>");
-        $(".wind").text("Wind Speed: " + response.wind.speed);
-        $(".humidity").text("Humidity: " + response.main.humidity);
+        $; // Transfer content to HTML
+        $(".city").html("<h1>" + response.city.name + " Weather Details</h1>");
+        $(".wind").text("Wind Speed: " + response.list[0].wind.speed);
+        $(".humidity").text("Humidity: " + response.list[0].main.humidity);
 
         // Convert the temp to fahrenheit
-        var tempF = (response.main.temp - 273.15) * 1.8 + 32;
+        var tempF = (response.list[0].main.temp - 273.15) * 1.8 + 32;
 
         // add temp content to html
-        $(".temp").text("Temperature (K) " + response.main.temp);
+        $(".temp").text("Temperature (K) " + response.list[0].main.temp);
         $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
 
         // Log the data in the console as well
-        console.log("Wind Speed: " + response.wind.speed);
-        console.log("Humidity: " + response.main.humidity);
+        console.log("Wind Speed: " + response.list[0].wind.speed);
+        console.log("Humidity: " + response.list[0].main.humidity);
         console.log("Temperature (F): " + tempF);
       })
       .catch((error) => {

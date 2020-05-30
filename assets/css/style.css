@@ -86,7 +86,7 @@ aside .column {
   text-align: center;
 }
 /* insert new divs like this */
-#newDivHere div {
+button.btn.citybtn {
   border: 1px solid gray;
   border-bottom: 2px solid black;
   border-right: 3px solid black;
@@ -96,27 +96,31 @@ aside .column {
   min-width: 300px;
   font-size: 20px;
   font-weight: bold;
+  max-width: 300px;
+  background-color: greenyellow;
 }
 
 section .column {
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  margin: 10px;
-  border: 10px;
+  flex-direction: column;
+  flex-flow: flex-start;
+  margin: 25px;
+  border: 20px solid black;
   padding: 0px;
   content: 25px;
   min-height: 500px;
   border: 10px;
+  font-size: 30px;
+  font: roboto, sans-serif;
 }
-section .column h2 {
-  text-align: center;
-}
+
 .city,
 .wind,
 .humidity,
-.temp {
-  font-family: "Courier New", Courier, monospace;
+.temp,
+.tempF {
+  font-family: roboto, sans-serif;
+  font-size: 20px;
 }
 
 footer {
