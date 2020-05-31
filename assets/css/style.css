@@ -4,11 +4,11 @@ html {
 
 body {
   background-color: white;
-  min-height: 100%;
 }
 
 header {
   font-family: "Baloo Paaji 2", cursive;
+  font-weight: bold;
   color: rgba(19, 142, 243, 0.884);
 }
 
@@ -19,11 +19,6 @@ h4,
 h5 {
   font-family: "Baloo Paaji 2", cursive;
   font-weight: bold;
-}
-
-h1 {
-  text-align: center;
-  top: 5px;
 }
 
 /*NAV */
@@ -37,9 +32,10 @@ h1 {
   color: rgba(19, 142, 243, 0.884);
 }
 
+.container {
+}
+
 #weather-search {
-  display: flex;
-  flex-direction: space-around;
 }
 
 #weather-search {
@@ -53,29 +49,21 @@ h1 {
   line-height: 18px;
   margin: 10px;
   padding: 5px, 5px, 5px, 5px;
-  text-align: center;
   cursor: pointer;
 }
 
 input {
   width: 300px;
-  padding: 15px 20px;
+  padding: 10px 10px;
   border-width: 4px;
   margin: 10px;
 }
 /* MAIN BODY */
-.container {
-  display: flex;
-  position: relative;
-  width: 100%;
-}
 
 aside.column {
   display: flex;
-  flex-direction: flex-start;
   min-height: 500px;
   flex-direction: column;
-  align-content: flex-start;
   margin: 15px;
   border: 5px;
   padding: 5px;
@@ -100,8 +88,8 @@ button.btn.citybtn {
 section.column {
   display: flex;
   flex-direction: column;
-  flex-flow: flex-start;
-  margin: 25px;
+  flex-flow: flex-end;
+  margin: 25px, 100px, 25px, 100px;
   border: 20px solid black;
   padding: 0px;
   content: 25px;
@@ -115,7 +103,8 @@ section.column {
 .wind,
 .humidity,
 .temp,
-.tempF {
+.tempF,
+.uvIndex {
   font-family: roboto, sans-serif;
   font-size: 20px;
 }
@@ -125,7 +114,7 @@ section.column {
 #div3,
 #div4,
 #div5 {
-  margin: 15px;
+  margin: 25px;
   border: 1px;
   padding: 10px;
   content: 5px;
@@ -141,4 +130,15 @@ footer {
   text-align: center;
   color: rgba(19, 142, 243, 0.884);
   font-size: 20px;
+}
+
+@media screen and (min-width: 1110px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(19, 142, 243, 0.884);
+    font-size: 20px;
+  }
 }
