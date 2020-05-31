@@ -26,9 +26,6 @@ h1 {
   top: 5px;
 }
 
-h2 {
-  margin: 15px;
-}
 /*NAV */
 .nav-link {
   font-family: "Baloo Paaji 2", cursive;
@@ -73,7 +70,7 @@ input {
   width: 100%;
 }
 
-aside .column {
+aside.column {
   display: flex;
   flex-direction: flex-start;
   min-height: 500px;
@@ -100,7 +97,7 @@ button.btn.citybtn {
   background-color: greenyellow;
 }
 
-section .column {
+section.column {
   display: flex;
   flex-direction: column;
   flex-flow: flex-start;
@@ -108,7 +105,7 @@ section .column {
   border: 20px solid black;
   padding: 0px;
   content: 25px;
-  min-height: 500px;
+  min-height: 250px;
   border: 10px;
   font-size: 30px;
   font: roboto, sans-serif;
@@ -121,6 +118,20 @@ section .column {
 .tempF {
   font-family: roboto, sans-serif;
   font-size: 20px;
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5 {
+  margin: 15px;
+  border: 1px;
+  padding: 10px;
+  content: 5px;
+  min-height: 25px;
+  font-size: 20px;
+  font: roboto, sans-serif;
 }
 
 footer {
