@@ -1,7 +1,5 @@
 $(document).ready(function () {
   // Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities.
-  // The documentation includes a section called
-  // "How to start" that will provide basic setup and usage instructions.
   //  Use `localStorage` to store any persistent data.
   let vLon = 0;
   let vLat = 0;
@@ -81,7 +79,7 @@ $(document).ready(function () {
         $(".temp").text("Temperature (K) " + response.main.temp);
         $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
 
-        // Log the data in the console as well
+        // Logs the data in the console as well
         console.log("Wind Speed: " + response.wind.speed);
         console.log("Humidity: " + response.main.humidity);
         console.log("Temperature (F): " + tempF);
@@ -163,6 +161,7 @@ $(document).ready(function () {
     })
       // We store all of the retrieved data inside of an object called "response"
       .then(function (response) {
+          console.log(response)
         // Transfer content to HTML
         $(".uvIndex").text("UV Index:" + response.value);
       });

@@ -162,6 +162,13 @@ footer {
     font-size: 14px;
     font: roboto, sans-serif;
   }
+
+  #div1 {
+    display: flex;
+    
+  }
+
+
   aside.column {
     bottom: 0;
     display: flex;
