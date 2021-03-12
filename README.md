@@ -5,8 +5,8 @@
 - [CONTRIBUTOR(S)](#CONTRIBUTOR(S))
 - [DESCRIPTION](#DESCRIPTION)
 - [REFERENCE LINKS](#REFERENCE-LINKS)
-  - [Dale's Google Books React Application :: Live Link](https://dales-google-books-app.herokuapp.com/)
-  - [Dale's Google Books React Application :: GitHub Repo](https://github.com/drkittendorf/21_google_books/)
+  - [Dale's Weather Dashboard Application :: Live Link](**)
+  - [Dale's Weather Dashboard Application :: GitHub Repo](https://github.com/drkittendorf/06-weather-dashboard)
 - [CONCEPT](#CONCEPT)
 - [LANGUAGES AND TOOLS](#LANGUAGES-AND-TOOLS)
 - [CORE PROJECT TECHNOLOGIES](#CORE-PROJECT-TECHNOLOGIES)
@@ -25,7 +25,7 @@ Dale Kittendorf
 
 ## DESCRIPTION
 
-This webpage **showcases** the Open Weather API and uses 2 different with 2 different keys. One to provide temperature and one to provide wind speed.
+This webpage **showcases** the Open Weather API and uses 2 different API calls/ keys with Open Weather. One to provide temperature and one to provide wind speed. The app stores previously searched cities, and displays.
 
 
 - User is provided a weather dashboard with form input
@@ -44,9 +44,9 @@ This webpage **showcases** the Open Weather API and uses 2 different with 2 diff
 
 ## REFERENCE LINKS
 
-Link to **Dale's Weather Dashboard  App** deployed on Heroku - [Dale's Application Live Link](https://dales-google-books-app.herokuapp.com/)
+Link to **Dale's Weather Dashboard App**  - [Dale's Application Live Link](*)
 
-Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/21_google_books)
+Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/06-weather-dashboard)
 
 <br>
 
@@ -70,7 +70,7 @@ Here is a list of all the core technologies used to develop this application.
 
 - `Open Weather API`
 - Jquery
-- AJAX Calls
+- AJAX Calls `An Ajax call is an asynchronous request initiated by the browser that does not directly result in a page transition`
 
 <br>
 
@@ -81,12 +81,12 @@ Here is a list of all the core technologies used to develop this application.
 For `future` development, I would like to incorporate the following `enhancements':
 
 -Options to be added in further updates include:
-the date, an icon representation of weather conditions,
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+  - the date, an icon representation of weather conditions,
+  - WHEN I view the UV index
+  - THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
 that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I open the weather dashboard
-THEN I am presented with the last searched city forecast
+  - WHEN I open the weather dashboard
+  - THEN I am presented with the last searched city forecast
 
 ---
 
