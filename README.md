@@ -6,11 +6,10 @@
 - [DESCRIPTION](#DESCRIPTION)
 - [REFERENCE LINKS](#REFERENCE-LINKS)
   - [Dale's Weather Dashboard Application :: Live Link](**)
-  - [Dale's Weather Dashboard Application :: GitHub Repo](https://github.com/drkittendorf/06-weather-dashboard)
+  - [Dale's Weather Dashboard Application :: GitHub Repo](https://github.com/drkittendorf/weather-dashboard)
 - [CONCEPT](#CONCEPT)
 - [LANGUAGES AND TOOLS](#LANGUAGES-AND-TOOLS)
 - [CORE PROJECT TECHNOLOGIES](#CORE-PROJECT-TECHNOLOGIES)
-- [CORE NODE DEPENDENCIES](#CORE-NODE-DEPENDENCIES)
 - [FUTURE DEVELOPMENT](#FUTURE-DEVELOPMENT)
 - [LICENSING](#LICENSING)
 - [SCREENSHOTS](#SCREENSHOTS-AND-VIDEO)
@@ -46,7 +45,7 @@ This webpage **showcases** the Open Weather API and uses 2 different API calls/ 
 
 Link to **Dale's Weather Dashboard App**  - [Dale's Application Live Link](*)
 
-Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/06-weather-dashboard)
+Link to **GitHub Repo** used for application development - [Dale's Application GitHub Repo](https://github.com/drkittendorf/weather-dashboard)
 
 <br>
 
@@ -84,7 +83,7 @@ For `future` development, I would like to incorporate the following `enhancement
   - the date, an icon representation of weather conditions,
   - WHEN I view the UV index
   - THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+    that displays the date, an icon representation of weather conditions, the temperature, and the humidity
   - WHEN I open the weather dashboard
   - THEN I am presented with the last searched city forecast
 
